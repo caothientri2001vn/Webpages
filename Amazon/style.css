@@ -26,10 +26,10 @@ body {
     background: white;
     padding: clamp(20px, 5vw, 50px); /* Dynamically adjusts padding */
     text-align: center;
-    font-size: clamp(1em, 2vw, 1.3em); /* Adjusts font size */
-    width: 50vw; /* Takes 80% of the viewport width */
-    max-width: 500px; /* Maximum width */
-    min-width: 250px; /* Minimum width for mobile */
+    font-size: clamp(0.5em, 1vw, 1em); /* Adjusts font size */
+    width: 30vw; /* Takes 80% of the viewport width */
+    max-width: 400px; /* Maximum width */
+    min-width: 200px; /* Minimum width for mobile */
     border-radius: 15px;
     color: #004ea8;
     font-family: 'Arial', sans-serif;
@@ -40,8 +40,8 @@ body {
 /* Adjust for smaller screens (phones) */
 @media (max-width: 768px) {
     .advertisement {
-        width: 50vw; /* Wider on smaller screens */
-        max-width: 50%; /* Use almost the entire width */
+        width: 30vw; /* Wider on smaller screens */
+        max-width: 30%; /* Use almost the entire width */
         padding: 20px; /* Less padding on smaller screens */
         font-size: 1.1em;
     }
@@ -50,9 +50,9 @@ body {
 /* Adjust for larger screens (desktops) */
 @media (min-width: 1200px) {
     .advertisement {
-        width: 50vw; /* Less width on larger screens */
+        width: 30vw; /* Less width on larger screens */
         max-width: 600px; /* Allow a larger maximum width */
-        font-size: 1.5em;
+        font-size: 1em;
     }
 }
 
