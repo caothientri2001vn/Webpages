@@ -27,7 +27,7 @@ body {
     padding: clamp(20px, 5vw, 50px); /* Dynamically adjusts padding */
     text-align: center;
     font-size: clamp(1em, 2vw, 1.3em); /* Adjusts font size */
-    width: 70vw; /* Takes 80% of the viewport width */
+    width: 50vw; /* Takes 80% of the viewport width */
     max-width: 500px; /* Maximum width */
     min-width: 300px; /* Minimum width for mobile */
     border-radius: 15px;
@@ -40,8 +40,8 @@ body {
 /* Adjust for smaller screens (phones) */
 @media (max-width: 768px) {
     .advertisement {
-        width: 90vw; /* Wider on smaller screens */
-        max-width: 90%; /* Use almost the entire width */
+        width: 50vw; /* Wider on smaller screens */
+        max-width: 50%; /* Use almost the entire width */
         padding: 20px; /* Less padding on smaller screens */
         font-size: 1.1em;
     }
