@@ -27,7 +27,7 @@ body {
     padding: clamp(20px, 5vw, 50px); /* Dynamically adjusts padding */
     text-align: center;
     font-size: clamp(1em, 2vw, 1.3em); /* Adjusts font size */
-    width: 80vw; /* Takes 80% of the viewport width */
+    width: 70vw; /* Takes 80% of the viewport width */
     max-width: 500px; /* Maximum width */
     min-width: 300px; /* Minimum width for mobile */
     border-radius: 15px;
