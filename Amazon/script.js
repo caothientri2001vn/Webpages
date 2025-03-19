@@ -29,3 +29,17 @@ document.addEventListener("DOMContentLoaded", () => {
         alert("Redirecting to promotional products!");
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Hide advertisement when clicking outside of it and restore background
+    document.querySelector(".amazon-background").addEventListener("click", (event) => {
+        const ad = document.querySelector(".advertisement");
+        const background = document.querySelector(".amazon-screenshot");
+        
+        if (!ad.contains(event.target)) {
+            ad.style.display = "none";
+            background.style.opacity = "1"; // Restore background visibility
+        }
+    });
+});
+
