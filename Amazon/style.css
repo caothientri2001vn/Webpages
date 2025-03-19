@@ -29,7 +29,7 @@ body {
     font-size: clamp(1em, 2vw, 1.3em); /* Adjusts font size */
     width: 50vw; /* Takes 80% of the viewport width */
     max-width: 500px; /* Maximum width */
-    min-width: 300px; /* Minimum width for mobile */
+    min-width: 250px; /* Minimum width for mobile */
     border-radius: 15px;
     color: #004ea8;
     font-family: 'Arial', sans-serif;
