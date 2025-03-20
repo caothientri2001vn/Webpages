@@ -1,45 +1,20 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const cartButton = document.querySelectorAll(".add-to-cart");
-    
-    cartButton.forEach(button => {
-        button.addEventListener("click", () => {
-            alert("Item added to cart!");
-        });
-    });
+    const advertisement = document.getElementById("advertisement");
+    const backgroundImage = document.querySelector(".amazon-screenshot");
+    const closeBtn = document.getElementById("close-popup");
 
-    // Search functionality
-    const searchBar = document.querySelector(".search-bar");
-    searchBar.addEventListener("keyup", (event) => {
-        if (event.key === "Enter") {
-            alert("Searching for: " + searchBar.value);
-        }
-    });
+    // Show the pop-up after 3 seconds
+    // setTimeout(() => {
+    //     advertisement.classList.remove("hidden");
+    //     backgroundImage.style.opacity = "0.3"; // Dim background
+    // }, 3000);
 
-    // Navigation menu toggle
-    const menuButton = document.querySelector(".menu-toggle");
-    const menu = document.querySelector(".menu");
-    
-    menuButton.addEventListener("click", () => {
-        menu.classList.toggle("active");
-    });
+    // Close pop-up function
+    function closePopup() {
+        advertisement.classList.add("hidden"); // Hide ad
+        backgroundImage.style.opacity = "1"; // Restore background
+    }
 
-    // Advertisement interaction
-    const shopNowButton = document.querySelector(".shop-now");
-    shopNowButton.addEventListener("click", () => {
-        alert("Redirecting to promotional products!");
-    });
+    // Event listener for the close button
+    closeBtn.addEventListener("click", closePopup);
 });
-
-document.addEventListener("DOMContentLoaded", () => {
-    // Hide advertisement when clicking outside of it and restore background
-    document.querySelector(".amazon-background").addEventListener("click", (event) => {
-        const ad = document.querySelector(".advertisement");
-        const background = document.querySelector(".amazon-screenshot");
-        
-        if (!ad.contains(event.target)) {
-            ad.style.display = "none";
-            background.style.opacity = "1"; // Restore background visibility
-        }
-    });
-});
-
