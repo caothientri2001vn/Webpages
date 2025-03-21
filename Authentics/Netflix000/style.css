@@ -81,7 +81,7 @@ body {
     right: 15px;
     font-size: 28px;
     cursor: pointer;
-    color: white;
+    color: rgb(198, 4, 4);
     font-weight: bold;
     transition: color 0.2s ease;
 }

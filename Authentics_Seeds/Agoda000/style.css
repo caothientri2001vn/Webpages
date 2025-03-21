@@ -10,7 +10,7 @@ body {
 .amazon-background {
     width: 100%;
     max-width: 1500px; /* Adjust to typical Amazon web width */
-    position: relative;
+    position: block;
 }
 .amazon-screenshot {
     width: 100%;
@@ -55,7 +55,6 @@ body {
         font-size: 1em;
     }
 }
-
 .shop-now {
     background-color: white;
     border: none;
@@ -65,24 +64,23 @@ body {
     font-weight: bold;
     border-radius: 10px;
     text-decoration: none;
-    color: #0051ff;
+    color: #004ea8;
     display: inline-block;
     transition: all 0.3s ease;
-    box-shadow: 0px 5px 15px rgba(255, 165, 0, 0.6);
+    box-shadow: 0px 5px 15px #004ea8;
 }
 .shop-now:hover {
     transform: scale(1.2);
-    background-color: #ffcc00;
-    color: #000;
+    background-color: #004ea8;
+    color: white;
 }
-
 .popup-close {
     position: absolute;
     top: 10px;
     right: 15px;
     font-size: 28px;
     cursor: pointer;
-    color: white;
+    color: #004ea8;
     font-weight: bold;
     transition: color 0.2s ease;
 }
