@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Hiện popup ngay khi trang tải
     advertisement.classList.remove("hidden");
-    backgroundImage.style.opacity = "0.2";
+    backgroundImage.style.opacity = "0";
 
     // Đóng popup
     function closePopup() {
