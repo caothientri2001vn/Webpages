@@ -2,19 +2,30 @@ document.addEventListener("DOMContentLoaded", () => {
     const advertisement = document.getElementById("advertisement");
     const backgroundImage = document.querySelector(".amazon-screenshot");
     const closeBtn = document.getElementById("close-popup");
+    const form = document.getElementById("ad-form");
 
-    // Show the pop-up after 3 seconds
-    // setTimeout(() => {
-    //     advertisement.classList.remove("hidden");
-    //     backgroundImage.style.opacity = "0.3"; // Dim background
-    // }, 3000);
+    // Hiện popup ngay khi trang tải
+    advertisement.classList.remove("hidden");
+    backgroundImage.style.opacity = "0.3";
 
-    // Close pop-up function
+    // Đóng popup
     function closePopup() {
-        advertisement.classList.add("hidden"); // Hide ad
-        backgroundImage.style.opacity = "1"; // Restore background
+        advertisement.classList.add("hidden");
+        backgroundImage.style.opacity = "1";
     }
 
-    // Event listener for the close button
+    // Khi nhấn X
     closeBtn.addEventListener("click", closePopup);
+
+    // Khi submit form
+    form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const timestamp = new Date().toISOString();
+
+        alert("Success! Continue your shopping journey on Amazon.com and enjoy special deals just for you.");
+        closePopup();
+    });
 });
